@@ -1,0 +1,1 @@
+[{"command":"echo Hello","title":"echo"},{"command":"start https://mniyk.com","title":"mniyk"},{"command":"start \"\"","title":"error"}]

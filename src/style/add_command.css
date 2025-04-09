@@ -1,0 +1,51 @@
+:root {
+  background-color: #222222;
+  color: white;
+  font-size: 14px;
+}
+
+.add-command {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+}
+
+form {
+  text-align: center;
+}
+
+form label {
+  text-align: left;
+  width: 100px;
+  display: inline-block;
+}
+
+form div input {
+  width: 500px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #3C3D37;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+}
+
+form div input[type=text]:focus {
+  border: 2px solid brown;
+}
+
+form input[type=submit] {
+  width: 620px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 100vh;
+  background-color: brown;
+  border: 2px solid #3C3D37;
+  color: white;
+}
+
+form input[type="submit"]:hover {
+  background-color: #3C3D37;
+  border: 2px solid brown;
+}
