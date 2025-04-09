@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Add Command</title>
+
+    <link rel="stylesheet" href="/src/style/add_command.css" />
+
+    <script type="module" src="/src/script/add_command.ts" defer></script>
+  </head>
+
+  <body>
+    <main class="add-command">
+      <form id="add-command-form">
+        <div>
+            <label>Title</label>
+            <input type="text" id="title" />
+        </div>
+        <div>
+            <label>Command</label>
+            <input type="text" id="command" />
+        </div>
+
+        <input type="submit" value="Add" />
+      </form>
+    </main>
+  </body>
+</html>

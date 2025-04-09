@@ -1,0 +1,33 @@
+:root {
+  background-color: #222222;
+  color: white;
+  font-size: 14px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: left;
+}
+
+button {
+  width: 200px;
+  padding: 5px;
+  border: 2px solid brown;
+  background-color: #222222;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+}
