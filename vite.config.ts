@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
 
-// @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST;
 
 // https://vitejs.dev/config/
@@ -25,6 +25,15 @@ export default defineConfig(async () => ({
     watch: {
       // 3. tell vite to ignore watching `src-tauri`
       ignored: ["**/src-tauri/**"],
+    },
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        add_command: resolve(__dirname, "add_command.html"),
+        confirmation: resolve(__dirname, "confirmation.html"),
+      },
     },
   },
 }));
